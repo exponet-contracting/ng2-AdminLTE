@@ -5,10 +5,10 @@ node_js:
     - "4"
 os:
     - linux
-cache:
-  directories:
-    - node
-    - node_modules
+# cache:
+#   directories:
+#     - node
+#     - node_modules
 before_install:
     - npm install -g angular-cli
     - export CHROME_BIN=/usr/bin/google-chrome
