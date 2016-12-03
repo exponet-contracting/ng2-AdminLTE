@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LteComponent } from './lte.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarMiniComponent } from './sidebar-mini/sidebar-mini.component';
@@ -24,13 +23,14 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { SocialWidgetComponent } from './social-widget/social-widget.component';
+import { ContainerComponent } from './container/container.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    LteComponent,
     HeaderComponent,
     SidebarComponent,
     SidebarMiniComponent,
@@ -53,10 +53,11 @@ import { SocialWidgetComponent } from './social-widget/social-widget.component';
     UsersListComponent,
     CarouselComponent,
     ModalComponent,
-    SocialWidgetComponent
+    SocialWidgetComponent,
+    ContainerComponent,
+    FooterComponent,
   ],
   exports: [
-    LteComponent,
     HeaderComponent,
     SidebarComponent,
     SidebarMiniComponent,
@@ -79,7 +80,9 @@ import { SocialWidgetComponent } from './social-widget/social-widget.component';
     UsersListComponent,
     CarouselComponent,
     ModalComponent,
-    SocialWidgetComponent
+    SocialWidgetComponent,
+    ContainerComponent,
+    FooterComponent,
   ],
 })
 export class LteModule { }
