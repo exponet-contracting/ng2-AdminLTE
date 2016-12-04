@@ -7,8 +7,4 @@ describe('ng2-admin-lte App', function() {
     page = new Ng2AdminLTEPage();
   });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
 });
