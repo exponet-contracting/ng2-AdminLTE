@@ -26,6 +26,10 @@ import { SocialWidgetComponent } from './social-widget/social-widget.component';
 import { ContainerComponent } from './container/container.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { LteOptionsService } from './services/lte-options.service';
+import { ContainerService } from './container/container.service';
+import { HeaderService } from './header/header.service';
+
 @NgModule({
   imports: [
     CommonModule
@@ -84,5 +88,10 @@ import { FooterComponent } from './footer/footer.component';
     ContainerComponent,
     FooterComponent,
   ],
+  providers: [
+    LteOptionsService,
+    ContainerService,
+    HeaderService,
+  ]
 })
 export class LteModule { }

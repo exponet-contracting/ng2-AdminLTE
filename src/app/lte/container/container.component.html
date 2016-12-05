@@ -1,11 +1,11 @@
-<div class="wrapper">
+<div class="wrapper" (click)="_containerService.wrapperClicked()">
 
   <ng-content select="lte-header"></ng-content>
   
   <ng-content select="lte-sidebar"></ng-content>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" (click)="_containerService.contentWrapperClicked()">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
